@@ -8,6 +8,8 @@ function answerQuery(query) {
   query = v.lowerCase(query);
   if (v.includes(query, "rain") || v.includes(query, "sun") || v.includes(query, "weather"))
     return "I do not care too much about weather, I'm locked inside a data center.";
+  if (v.includes(query, "tea") || v.includes(query, "coffee") || v.includes(query, "drink"))
+    return "I would love some tea, but they have not created one for silicon-based life forms yet.";
   return "Sorry Dave, I cannot do that."
 }
 
@@ -33,7 +35,7 @@ function handleSayClick() {
     // Otherwise, get answer for the given query and show the query & answer
     var answer = answerQuery(message)
     conversation.innerHTML += "<p><strong>You:</strong> " + message + "</p>";
-    conversation.innerHTML += "<p><strong>Useless bot:</strong> " + answer + "</p>";
+    conversation.innerHTML += "<p><strong>Silly bot:</strong> " + answer + "</p>";
   }
 }
 
