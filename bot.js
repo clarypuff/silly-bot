@@ -17,6 +17,13 @@ function answerQuery(query) {
 function isPermitted(query) {
   // You will need to implement this function in the last part of the exercise 
   // (after you add 'filtering.js' tests); you can ignore it until then!
+  query = v.lowerCase(query);
+  if (v.includes(query, "brexit"))
+	return false;
+  if (v.includes(query, "shit")
+	if v.includes(query, "mushroom") return true;  
+  )
+	return false;
   return true;
 }
 
