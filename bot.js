@@ -21,7 +21,7 @@ function isPermitted(query) {
   if (v.includes(query, "brexit"))
 	return false;
   if (v.includes(query, "shit")
-	if v.includes(query, "mushroom") return true;  
+	if (v.includes(query, "mushroom")) return true;  
   )
 	return false;
   return true;
